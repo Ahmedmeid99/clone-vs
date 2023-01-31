@@ -8,6 +8,7 @@ const folderSkills = document.getElementById('folder-skills')
 const skillsContent = document.getElementById('skills-content')
 const pageLinks = document.querySelectorAll('.page-link')
 const subPageLinks = document.querySelectorAll('.under-subheader ul li')
+const pages = document.querySelectorAll('.page')
 console.log(pageLinks)
 pageLinks.forEach((pageLink) => {
     pageLink.addEventListener('click', (e) => {
@@ -29,12 +30,17 @@ pageLinks.forEach((pageLink) => {
         // add active to subPageLink
         activePageLink.classList.add('active')
 
+        ////////////////////////////////////
+        // show active page
+        let activePage = document.querySelector(`[data-page=${pageLink.id}]`)
+        pages.forEach((page) => {
+            page.classList.remove('active-page')
+        })
+
+        activePage.classList.add('active-page')
     })
 })
 
-console.log(openMenu)
-console.log(closeMenu)
-console.log(menu)
 // open and close menu
 openMenu.addEventListener('click', () => {
     if (menu.classList.contains('close')) {
