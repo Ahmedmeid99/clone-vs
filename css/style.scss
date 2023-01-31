@@ -118,6 +118,7 @@ ul {
     flex-basis: 23%;
     background-color: $menu_color;
     display: flex;
+    z-index: 99;
     & .icons {
       flex-basis: 50px;
       background-color: #333;
@@ -191,6 +192,7 @@ ul {
     height: 100%;
   }
 }
+
 @media (max-width: 400px) {
   .main .menu {
     position: absolute;
@@ -271,7 +273,7 @@ ul {
     }
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 430px) {
   .content .subheader ul li {
     font-size: 0.9rem;
   }
@@ -296,7 +298,7 @@ ul {
 .home {
   .info {
     display: flex;
-    align-items: center;
+    align-items: end;
     gap: 4rem;
     margin: auto;
     width: fit-content;
@@ -329,9 +331,9 @@ ul {
         color: $vs_icon_color;
         font-style: italic;
       }
-      & span {
+      & .jop-title {
         font-size: 1.2rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1.4rem;
         display: inline-block;
         background: $menu_color;
         padding: 0.3rem 0.9rem 0.5rem 0.9rem;
@@ -344,10 +346,24 @@ ul {
         color: #52993e;
         line-height: 1.6;
       }
+      .commint {
+        color: #52993e;
+        letter-spacing: 3px;
+        font-size: 1.1rem;
+        font-weight: 400;
+      }
     }
   }
 }
-
+@media (max-width: 798px) {
+  .info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info .img-cover {
+    width: 200px;
+  }
+}
 // icons
 .fa-folder-open {
   color: #dcb67a;

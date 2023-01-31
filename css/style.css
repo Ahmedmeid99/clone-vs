@@ -103,6 +103,7 @@ ul {
   flex-basis: 23%;
   background-color: #252526;
   display: flex;
+  z-index: 99;
 }
 .main .menu .icons {
   flex-basis: 50px;
@@ -256,7 +257,7 @@ ul {
   font-size: 0.9rem;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 430px) {
   .content .subheader ul li {
     font-size: 0.9rem;
   }
@@ -282,7 +283,7 @@ ul {
 
 .home .info {
   display: flex;
-  align-items: center;
+  align-items: end;
   gap: 4rem;
   margin: auto;
   width: -webkit-fit-content;
@@ -317,9 +318,9 @@ ul {
   color: #3faaf2;
   font-style: italic;
 }
-.home .info .info-text span {
+.home .info .info-text .jop-title {
   font-size: 1.2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.4rem;
   display: inline-block;
   background: #252526;
   padding: 0.3rem 0.9rem 0.5rem 0.9rem;
@@ -332,7 +333,22 @@ ul {
   color: #52993e;
   line-height: 1.6;
 }
+.home .info .info-text .commint {
+  color: #52993e;
+  letter-spacing: 3px;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
 
+@media (max-width: 798px) {
+  .info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info .img-cover {
+    width: 200px;
+  }
+}
 .fa-folder-open {
   color: #dcb67a;
   font-size: 1rem;
