@@ -272,6 +272,9 @@ ul {
       font-size: 0.9rem;
     }
   }
+  & ul li.active {
+    display: inline-block !important;
+  }
 }
 @media (max-width: 430px) {
   .content .subheader ul li {
@@ -295,6 +298,9 @@ ul {
 .section {
   padding: 1rem 1rem 6rem 1rem;
 }
+//#############
+// home page
+//#############
 .home {
   .info {
     display: flex;
@@ -364,6 +370,27 @@ ul {
     width: 200px;
   }
 }
+
+//#############
+// placeholder
+//#############
+.work-on {
+  width: fit-content;
+  margin: auto;
+  padding: 1rem;
+  & h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  & span {
+    text-align: center;
+    display: block;
+    font-size: 1.1rem;
+    color: $vs-comment;
+  }
+}
+
 // icons
 .fa-folder-open {
   color: #dcb67a;

@@ -256,6 +256,9 @@ ul {
 .content .under-subheader .fa-chevron-right {
   font-size: 0.9rem;
 }
+.content ul li.active {
+  display: inline-block !important;
+}
 
 @media (max-width: 430px) {
   .content .subheader ul li {
@@ -349,6 +352,25 @@ ul {
     width: 200px;
   }
 }
+.work-on {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  padding: 1rem;
+}
+.work-on h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.work-on span {
+  text-align: center;
+  display: block;
+  font-size: 1.1rem;
+  color: #52993e;
+}
+
 .fa-folder-open {
   color: #dcb67a;
   font-size: 1rem;

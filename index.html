@@ -148,19 +148,19 @@
             <div class="content">
                 <header class="subheader">
                     <ul>
-                        <li class="active">
+                        <li class="page-link active" id="home">
                             <i class="fa-brands fa-js js"></i>
                             <span>home.js</span>
                         </li>
-                        <li>
+                        <li class="page-link" id="about">
                             <i class="fa-brands fa-css3 css"></i>
                             <span>about.css</span>
                         </li>
-                        <li>
+                        <li class="page-link" id="experience">
                             <i class="fa-brands fa-react react"></i>
                             <span>experience.jsx</span>
                         </li>
-                        <li>
+                        <li class="page-link" id="contact">
                             <i class="fa-brands fa-html5 html"></i>
                             <span>contact.html</span>
                         </li>
@@ -172,19 +172,36 @@
                     </div>
                     <i class="fa-solid fa-chevron-right"></i>
                     <div>
-                        <i class="fa-brands fa-js js"></i><span>home.js</span>
+                        <ul>
+                            <li class="close active" href="home">
+                                <i class="fa-brands fa-js js"></i>
+                                <span>home.js</span>
+                            </li>
+                            <li class="close" href="about">
+                                <i class="fa-brands fa-css3 css"></i>
+                                <span>about.css</span>
+                            </li>
+                            <li class="close" href="experience">
+                                <i class="fa-brands fa-react react"></i>
+                                <span>experience.jsx</span>
+                            </li>
+                            <li class="close" href="contact">
+                                <i class="fa-brands fa-html5 html"></i>
+                                <span>contact.html</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="body-content">
                     <div class="nums" id="nums">
                     </div>
                     <div class="content">
-                        <div class="home" id="home">
-                            <!-- <div class="hero-header">
-                                    <div class="comment">####################</div>
-                                    <div class="comment"># about me</div>
-                                    <div class="comment">####################</div>
-                                </div> -->
+                        <div class="page home" id="home">
+                            <div class="hero-header">
+                                <div class="comment">####################</div>
+                                <div class="comment"># about me</div>
+                                <div class="comment">####################</div>
+                            </div>
                             <section class="section">
                                 <div class="info">
                                     <div class="img-cover" data-aos="zoom-in">
@@ -207,6 +224,24 @@
                                     </div>
                                 </div>
                             </section>
+                        </div>
+                        <div class="page about" href="about">
+                            <div class="work-on">
+                                <h3>about</h3>
+                                <span>لم تنتهي بعد</span>
+                            </div>
+                        </div>
+                        <div class="page experience" href="experience">
+                            <div class="work-on">
+                                <h3>experience</h3>
+                                <span>لم تنتهي بعد</span>
+                            </div>
+                        </div>
+                        <div class="page contact" href="contact">
+                            <div class="work-on">
+                                <h3>contact</h3>
+                                <span>لم تنتهي بعد</span>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -6,6 +6,31 @@ const folderInf = document.getElementById('folder-information')
 const infContent = document.getElementById('information-content')
 const folderSkills = document.getElementById('folder-skills')
 const skillsContent = document.getElementById('skills-content')
+const pageLinks = document.querySelectorAll('.page-link')
+const subPageLinks = document.querySelectorAll('.under-subheader ul li')
+console.log(pageLinks)
+pageLinks.forEach((pageLink) => {
+    pageLink.addEventListener('click', (e) => {
+        // remove active from page-links
+        pageLinks.forEach((link) => {
+            link.classList.remove('active')
+        })
+
+        // add active from page-link
+        pageLink.classList.add('active')
+
+        ////////////////////////////////////
+        // show active file in under subheader
+        let activePageLink = document.querySelector(`[href=${pageLink.id}]`)
+        // remove active from last subPageLinks
+        subPageLinks.forEach((subPageLink) => {
+            subPageLink.classList.remove('active')
+        })
+        // add active to subPageLink
+        activePageLink.classList.add('active')
+
+    })
+})
 
 console.log(openMenu)
 console.log(closeMenu)
