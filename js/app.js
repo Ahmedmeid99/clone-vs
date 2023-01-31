@@ -25,7 +25,7 @@ closeMenu.addEventListener('click', () => {
 
 // add numbers using js
 let spanEls = ``
-for (let i = 1; i <= 30; i++) {
+for (let i = 1; i <= 60; i++) {
     spanEls += `<span>${i}</span>`
 }
 numsEl.innerHTML = spanEls
