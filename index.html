@@ -61,88 +61,147 @@
             <div class="menu close" id="menu">
                 <div class="icons">
                     <ul>
-                        <li>
-                            <i class="fa-regular fa-copy active"></i>
+                        <li class="menu-icon active-icon" id="folders">
+                            <i class="fa-regular fa-copy"></i>
                         </li>
-                        <li>
-                            <i class="fa-solid fa-home"></i>
+                        <li class="menu-icon" id="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
                         </li>
-                        <li>
-                            <i class="fa-solid fa-home"></i>
+                        <li class="menu-icon" id="projects">
+                            <i class="fa-brands fa-google-play"></i>
                         </li>
-                        <li>
-                            <i class="fa-solid fa-home"></i>
+                        <li class="menu-icon" id="certificate">
+                            <i class="fa-solid fa-certificate"></i>
                         </li>
-                        <li>
-                            <i class="fa-solid fa-home"></i>
+                        <li class="menu-icon" id="gear">
+                            <i class="fa-solid fa-gear"></i>
                         </li>
                     </ul>
                 </div>
-                <div class="my-information" id="my-information">
-                    <div class="title">
-                        <i class="fa-solid fa-chevron-down"></i>
-                        <div class="text">about me</div>
-                    </div>
-                    <div class="information-content">
-                        <div class="folder is-closed" id="folder-information">
+                <div class="menu-content">
+                    <!-- my-information component -->
+                    <div class="component my-information close active" href="folders">
+                        <div class="title">
                             <i class="fa-solid fa-chevron-down"></i>
-                            <i class="fa-solid fa-folder-open"></i>
-                            <div class="text">my information</div>
+                            <div class="text">about me</div>
                         </div>
-                        <ul class="list-content close" id="information-content">
-                            <li>
-                                <i class="fa-solid fa-phone-flip phone"></i>
-                                <span>01095814411</span>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-location-dot location"></i>
-                                <span>Abu kaber sharkia</span>
-                            </li>
-                            <li>
-                                <i class="fa-regular fa-envelope email"></i>
-                                <span>ahmedalbakrycool@gmail.com</span>
-                            </li>
-                            <li>
-                                <i class="fa-brands fa-linkedin linkedin"></i>
-                                <span>linkedin</span>
-                            </li>
-                            <li>
-                                <i class="fa-brands fa-github-square github "></i>
-                                <span>github</span>
-                            </li>
-                        </ul>
-                        <div class="folder" id="folder-skills">
-                            <i class="fa-solid fa-chevron-down"></i>
-                            <i class="fa-solid fa-folder-open"></i>
-                            <div class="text">skills</div>
+                        <div class="information-content">
+                            <div class="folder is-closed" id="folder-information">
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <i class="fa-solid fa-folder-open"></i>
+                                <div class="text">my information</div>
+                            </div>
+                            <ul class="list-content close" id="information-content">
+                                <li>
+                                    <i class="fa-solid fa-phone-flip phone"></i>
+                                    <span>01095814411</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-location-dot location"></i>
+                                    <span>Abu kaber sharkia</span>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-envelope email"></i>
+                                    <span>ahmedalbakrycool@gmail.com</span>
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-linkedin linkedin"></i>
+                                    <span>linkedin</span>
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-github-square github "></i>
+                                    <span>github</span>
+                                </li>
+                            </ul>
+                            <div class="folder" id="folder-skills">
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <i class="fa-solid fa-folder-open"></i>
+                                <div class="text">skills</div>
+                            </div>
+                            <ul class="list-content" id="skills-content">
+                                <li>
+                                    <i class="fa-brands fa-react react"></i>
+                                    <span>React</span>
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-node-js node"></i>
+                                    <span>Node.js</span>
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-js js"></i>
+                                    <span>Javascript</span>
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-python python"></i>
+                                    <span>Python</span>
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-css3 css"></i>
+                                    <span>Css</span>
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-html5 html"></i>
+                                    <span>Html</span>
+                                </li>
+                            </ul>
                         </div>
-                        <ul class="list-content" id="skills-content">
-                            <li>
-                                <i class="fa-brands fa-react react"></i>
-                                <span>React</span>
-                            </li>
-                            <li>
-                                <i class="fa-brands fa-node-js node"></i>
-                                <span>Node.js</span>
-                            </li>
-                            <li>
-                                <i class="fa-brands fa-js js"></i>
-                                <span>Javascript</span>
-                            </li>
-                            <li>
-                                <i class="fa-brands fa-python python"></i>
-                                <span>Python</span>
-                            </li>
-                            <li>
-                                <i class="fa-brands fa-css3 css"></i>
-                                <span>Css</span>
-                            </li>
-                            <li>
-                                <i class="fa-brands fa-html5 html"></i>
-                                <span>Html</span>
-                            </li>
-                        </ul>
                     </div>
+                    <!-- /////////////////////////// -->
+                    <!-- Search component -->
+                    <div class="component close" href="search">
+                        <div class="work-on">
+                            <h3>search</h3>
+                            <span>لم تنتهي بعد</span>
+                        </div>
+                    </div>
+                    <!-- /////////////////////////// -->
+                    <!-- my-projects component -->
+                    <div class="component my-projects close" href="projects">
+                        <form class="form">
+                            <input type="text" placeholder="Search about project or skill">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </form>
+                        <div class="projects-title">
+                            <div class="title">
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <span>my projects</span>
+                            </div>
+                            <span class="count" id="'count">23</span>
+                        </div>
+                        <div class="projects" id="projects">
+                            <div class="project">
+                                <div class="img-cover">
+                                    <img src="./images/shuffle-01.jpg" alt="">
+                                </div>
+                                <div class="project-det">
+                                    <h6 class="project-title">dafter app</h6>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, quaerat.</p>
+                                    <ul class="tecs">
+                                        <li>React</li>
+                                        <li>Node</li>
+                                        <li>Css</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /////////////////////////// -->
+                    <!-- Search component -->
+                    <div class="component close" href="certificate">
+                        <div class="work-on">
+                            <h3>certificates</h3>
+                            <span>لم تنتهي بعد</span>
+                        </div>
+                    </div>
+                    <!-- /////////////////////////// -->
+                    <!-- Search component -->
+                    <div class="component close" href="gear">
+                        <div class="work-on">
+                            <h3>gear</h3>
+                            <span>لم تنتهي بعد</span>
+                        </div>
+                    </div>
+                    <!-- /////////////////////////// -->
                 </div>
             </div>
             <div class="content">

@@ -1,6 +1,8 @@
 const openMenu = document.getElementById('open-menu')
 const closeMenu = document.getElementById('close-menu')
 const menu = document.getElementById('menu')
+const menuIcons = document.querySelectorAll('.icons .menu-icon')
+const menuComponents = document.querySelectorAll('.component')
 const numsEl = document.getElementById('nums')
 const folderInf = document.getElementById('folder-information')
 const infContent = document.getElementById('information-content')
@@ -9,7 +11,31 @@ const skillsContent = document.getElementById('skills-content')
 const pageLinks = document.querySelectorAll('.page-link')
 const subPageLinks = document.querySelectorAll('.under-subheader ul li')
 const pages = document.querySelectorAll('.page')
-console.log(pageLinks)
+
+
+menuIcons.forEach((menuIcon) => {
+    menuIcon.addEventListener('click', () => {
+        // remove active from last active icon
+        menuIcons.forEach((icon) => {
+            icon.classList.remove('active-icon')
+        })
+        // add active to clicked icon
+        menuIcon.classList.add('active-icon')
+
+        // show own component
+        menuComponents.forEach((menuComponent) => {
+            menuComponent.classList.remove('active')
+        })
+        try {
+            let activeComponent = document.querySelector(`[href=${menuIcon.id}]`)
+            activeComponent.classList.add('active')
+        } catch (error) {
+            console.log(error)
+        }
+    })
+})
+
+
 pageLinks.forEach((pageLink) => {
     pageLink.addEventListener('click', (e) => {
         // remove active from page-links
